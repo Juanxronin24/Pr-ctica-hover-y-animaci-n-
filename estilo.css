@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    height: 100vh;
+}
+
+#contenedor-1 {
+    display: grid;
+    justify-items: center;
+    background-color: cornflowerblue;
+    border: 10px inset black;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.texto-especial {
+    font-size: 2rem;
+    animation: entrada-texto 1.5s;
+}
+
+
+
+#contenedor-1:hover {
+    border-style: groove;
+    background-color: palevioletred
+}
+
+.texto-especial:hover {
+    color: darkgreen;
+    text-decoration: underline;
+    animation: salto-texto 0, 5s;
+
+}
+
+@keyframes entrada-texto {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+
+
+}
+
+@keyframes salto-texto {
+    50% {
+        transform: scale(1, 1);
+
+
+    }
+
+}
